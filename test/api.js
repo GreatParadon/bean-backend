@@ -1,10 +1,10 @@
-process.env.NODE_ENV = 'test';
-const chai = require('chai');
-const chaiHttp = require('chai-http');
-const app = require('../core/server');
-const should = chai.should();
+process.env.NODE_ENV = 'test'
+const chai = require('chai')
+const chaiHttp = require('chai-http')
+const app = require('../index')
+const should = chai.should()
 
-chai.use(chaiHttp);
+chai.use(chaiHttp)
 
 describe('API test', () => {
   // it('it should login success', (done) => {
@@ -43,4 +43,4 @@ describe('API test', () => {
   //     });
   // });
 
-});
+})
